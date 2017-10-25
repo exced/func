@@ -1,0 +1,2 @@
+# func
+JS func set
