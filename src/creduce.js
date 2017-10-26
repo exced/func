@@ -17,6 +17,6 @@ import Z from './internal/Z'
  *
  *      func.creduce([1, 2, 3])((acc, curr) => acc + curr)(0)   //=>6
  */
-const creduce = Z(g => a => cb => i => !a.length ? i : g(a.slice(1))(cb)(cb(i, a[0])))
+const creduce = Z(f => ([x, ...xs]) => r => i => x === undefined ? i : f(xs)(r)(r(i, x)))
 
 export default creduce
