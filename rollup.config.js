@@ -12,7 +12,7 @@ let banner = '//  func v' + pkg.version + '\n'
 let config = {
   input: 'src/index.js',
   output: {
-    file: 'dist/bundle.js',
+    file: 'dist/func.js',
     format: 'umd',
     name: 'func',
   },
@@ -25,7 +25,8 @@ let config = {
       }
     }),
     babel({
-      exclude: 'node_modules/**' // only transpile our source code
+      exclude: 'node_modules/**', // only transpile our source code
+      plugins: ['external-helpers']
     })
   ],
   external: []

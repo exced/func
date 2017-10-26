@@ -21,8 +21,12 @@ install: package.json ## Install project dependencies
 
 clean: ## Clean dist folder
 	echo "$(OBJ_COLOR)Cleaning dist folder$(NO_COLOR)"
-	rm -rf dist/bundle.js
+	rm -f dist/*.js
 
 build: install ## Builds the library with rollup
-	echo "$(OBJ_COLOR)I rollup...$(NO_COLOR)"
-	rollup -c	
+	echo "$(OBJ_COLOR)I rollup, I rollup...$(NO_COLOR)"
+	yarn run build	
+
+test: install ## Run Jest tests
+	echo "$(OBJ_COLOR)Running tests...$(NO_COLOR)"
+	yarn run test

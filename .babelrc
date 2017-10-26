@@ -1,11 +1,24 @@
 {
-    "presets": [
-        "es2015"
+    "ignore": [
+        "node_modules/**"
     ],
     "env": {
-        "test": {
+        "development": {
             "presets": [
                 "es2015"
+            ]
+        },
+        "production": {
+            "presets": [
+                [
+                    "es2015",
+                    {
+                        "modules": false
+                    }
+                ]
+            ],
+            "plugins": [
+                "external-helpers"
             ]
         }
     }
