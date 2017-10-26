@@ -1,7 +1,7 @@
 import crange from './crange'
 
 /**
- * Uncurrified version of crange. A function that builds a range array from given first parameter to second parameter. 
+ * Uncurried version of crange. A function that builds a range array from given first parameter to second parameter. 
  * Third parameter defines current step.
  *
  * @func

@@ -1,7 +1,7 @@
 import Z from './internal/Z'
 
 /**
- * Currified version of range. A function that builds a range array from given first parameter to second parameter. 
+ * Curried version of range. A function that builds a range array from given first parameter to second parameter. 
  * Third parameter defines current step.
  *
  * @func
