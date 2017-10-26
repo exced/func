@@ -1,2 +1,3 @@
-# func
-JS func set
+# Func
+
+A set of standard functional utilities.
