@@ -18,6 +18,6 @@ import crange from './crange'
  *
  *      func.range(-2, 2)   //=> [-2,-1,0,1,2]
  */
-const range = (fromA, toB, step) => crange(fromA)(toB)(step)
+const range = (fromA, toB, step) => crange(fromA)(toB)(step || 1)
 
 export default range

@@ -18,6 +18,6 @@ import Z from './internal/Z'
  *
  *      func.crange(-2, 2)   //=> [-2,-1,0,1,2]
  */
-const crange = Z(f => acc => min => max => step => min > max ? acc : f([...acc, min])(min + (step || 1))(max)(step || 1))([])
+const crange = Z(f => acc => min => max => step => min > max ? acc : f([...acc, min])(min + step)(max)(step))([])
 
 export default crange
