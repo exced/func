@@ -15,8 +15,8 @@ import U from './internal/U'
  *
  *      func.permutate([1, 2, 3])   //=>[ [ 1, 2, 3 ],[ 1, 3, 2 ],[ 2, 1, 3 ],[ 2, 3, 1 ],[ 3, 1, 2 ],[ 3, 2, 1 ] ]
  */
-const permutate = arr => arr.reduce(U(f => (res, item, key, arr) =>
-    res.concat(arr.length > 1 && arr.filter((e, i) => i != key)
+const permutate = arr => arr.reduce(U(f => (acc, item, key, arr) =>
+    acc.concat(arr.length > 1 && arr.filter((e, i) => i != key)
         .reduce(f(f), [])
         .map(perm => [item].concat(perm)) || item)
 ), [])
