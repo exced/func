@@ -1,7 +1,7 @@
 import Z from './internal/Z'
 
 /**
- * Curried version of reverse. A function that returns given reversed given array
+ * A function that returns given reversed given array
  *
  * @func
  * @memberOf func

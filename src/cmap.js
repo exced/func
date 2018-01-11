@@ -1,7 +1,7 @@
 import Z from './internal/Z'
 
 /**
- * Uncurried version of map. Applied a function to each element of array and returns the array
+ * Applied a function to each element of array and returns the array
  *
  * @func
  * @memberOf func

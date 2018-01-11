@@ -1,4 +1,5 @@
 export { default as cfactorial } from './cfactorial'
+export { default as cfilter } from './cfilter'
 export { default as cmap } from './cmap'
 export { default as crange } from './crange'
 export { default as creduce } from './creduce'

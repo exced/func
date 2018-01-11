@@ -1,7 +1,7 @@
 import Z from './internal/Z'
 
 /**
- * Curried version of reduce. A fold right function
+ * A fold right function
  *
  * @func
  * @memberOf func
